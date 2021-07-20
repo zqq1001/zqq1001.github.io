@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+## Welcome to MyBlog
 
-You can use the [editor on GitHub](https://github.com/zqq1001/zqq1001.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+---
+sidebar: auto
+---
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Home](/) <!-- 跳转到根部的 README.md -->
+[foo](/foo/) <!-- 跳转到 foo 文件夹的 index.html -->
+[foo heading](./#heading) <!-- 跳转到 foo/index.html 的特定标题位置 -->
+[bar - three](../bar/three.md) <!-- 具体文件可以使用 .md 结尾（推荐） -->
+[bar - four](../bar/four.html) <!-- 也可以用 .html -->
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+---
+Blogging Like a Hacker
+---
 
-- Bulleted
-- List
+---
+我是title
+---
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
-[Link](url) and ![Image](src)
+
+:tada: :100:
+
+表情 链接 https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json
+
+[[toc]]
+
+
+::: danger STOP
+危险区域，禁止通行
+:::
+
+::: details 点击查看代码
+```js
+console.log('你好，VuePress！')
+```
+:::
+
+
+::: details 点击查看
+dddd
+:::
+
+
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zqq1001/zqq1001.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+``` js {4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
